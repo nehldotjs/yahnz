@@ -12,8 +12,8 @@ import "../homeComponets/homeStyleComponent/trendingNewsStyleSheet.css"
 
 function TrendingNews() {
   // const { data } = props
-  const unique_id = uuid();
-  console.log(unique_id);
+  // const unique_id = uuid();
+  // console.log(unique_id);
 
   const [activate, setActivate] = useState(false);
   const [like, setLike] = useState(false);
