@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+.nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0px;
+  top: 0px;
+  z-index: 9;
+}
+.navContainer {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  color: white;
+  position: relative;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.imageContainer {
+  overflow: hidden;
+  top: 0px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #5b7d58;
+  mix-blend-mode: multiply;
+}
+.imageContainer img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+.navContextContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0px 60px;
+}
+
+.navContextContainer .burgerMneu {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: auto;
+}
+
+.navContextContainer .burgerMneu button {
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  border: 1px solid #5b7d58;
+  background-color: rgba(71, 71, 71, 0.323);
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navContextContainer .burgerMneu button .burgerLine1,
+.navContextContainer .burgerMneu button .burgerLine2 {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+}
+
+.navContextContainer .burgerMneu li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.navContextContainer .logoContainer {
+  /* background-color: red; */
+  display: flex;
+  width: auto;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContextContainer .logoContainer .navLogo {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-self: center;
+  margin: 10px;
+}
+
+.socialLinks {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+.socialLinks a {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  height: 30px;
+}
+
+.socialLinks a img {
+  position: relative;
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+
+.selectBtn {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  position: relative;
+}
+.selectBtn select {
+  color: white;
+  background-color: transparent;
+  font-family: poppins;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1.5px solid white;
+  padding: 2px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.selectBtn select option {
+  background-color: none;
+  color: black;
+  font-family: poppins;
+}
+
+@media only screen and (max-width: 900px) {
+  .navContextContainer {
+    padding: 0px 5px;
+    justify-content: space-between;
+  }
+
+  .navContextContainer .burgerMneu button {
+    width: 30px;
+    height: 20px;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+
+  .navContextContainer .burgerMneu button .burgerLine1,
+  .navContextContainer .burgerMneu button .burgerLine2 {
+    height: 1.5px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+  }
+
+  .navContextContainer .logoContainer {
+    display: flex;
+    width: auto;
+    height: 40px;
+    margin: auto;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .socialLinks {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+  }
+
+  .socialLinks a {
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    height: 15px;
+
+    margin-top: 15px;
+  }
+
+  .selectBtn {
+    padding: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: unset;
+  }
+
+  .selectBtn select {
+    color: white;
+    background-color: transparent;
+    font-family: poppins;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1.5px solid white;
+
+    backdrop-filter: 5px (blur);
+    padding: 1.5px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+.selectBtn select option {
+  background-color: none;
+  color: black;
+  font-family: poppins;
+  font-weight: bold;
+}
+}
+
