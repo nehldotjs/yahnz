@@ -12,7 +12,7 @@ const ApiData = (props) => {
   // API PROPERTIES
   const BASE_URL = `https://newsapi.org`;
   const LINK_PROPERTY = `/v2/top-headlines?country=${country}&category=${category}&apiKey=`;
-  const API_KEY = process.env.REACT_APP_API_KEY;
+  const API_KEY = "5578ac1880e24738a6105aa76f6061d1";
   const detail = BASE_URL + LINK_PROPERTY + API_KEY;
 
   const fetchData = async () => {
