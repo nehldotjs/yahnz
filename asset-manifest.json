@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.js": "/yahnz/static/js/main.43e92db8.js",
+    "main.css": "/yahnz/static/css/main.268f86aa.css",
+    "main.js": "/yahnz/static/js/main.254cda91.js",
+    "static/media/footer.png": "/yahnz/static/media/footer.23727e7c5a2d719bf504.png",
+    "static/media/bustop.png": "/yahnz/static/media/bustop.07945405bee13a6ab5fd.png",
     "index.html": "/yahnz/index.html",
-    "main.43e92db8.js.map": "/yahnz/static/js/main.43e92db8.js.map"
+    "main.268f86aa.css.map": "/yahnz/static/css/main.268f86aa.css.map",
+    "main.254cda91.js.map": "/yahnz/static/js/main.254cda91.js.map"
   },
   "entrypoints": [
-    "static/js/main.43e92db8.js"
+    "static/css/main.268f86aa.css",
+    "static/js/main.254cda91.js"
   ]
 }
