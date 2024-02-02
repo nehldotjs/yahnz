@@ -1,0 +1,81 @@
+.carouselContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0px 20px;
+}
+.card {
+  background-color: #2b5128;
+  position: relative;
+  height: 250px;
+  width: 400px;
+  margin: 0px 10px;
+  display: flex;
+}
+.card img {
+  z-index: 1;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .context {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center;
+}
+.card .context .title {
+  position: relative;
+  left: -10px;
+  top: 10px;
+  padding: 5px;
+  font-size: 15px;
+  background: linear-gradient(90deg, #5b7d58 0.79%, #467e41 100%);
+}
+
+.card .context .description {
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 15px;
+  font-family: poppins;
+  font-size: 15.55px;
+  background: linear-gradient(
+    179.7deg,
+    rgba(18, 56, 15, 0.1) 16.37%,
+    #2b5128 99.74%
+  );
+}
+button.rec-dot {
+  display: none;
+}
+.rec.rec-arrow {
+  border-radius: 0;
+  border: none;
+  outline: 0px;
+  margin: 0px 20px;
+  position: absolute;
+  z-index: 5;
+}
+.rec-arrow-right {
+  background-color: #2b512831;
+  right: 0px;
+}
+.rec-arrow-left {
+  background-color: #2b512831;
+  left: 0px;
+}
